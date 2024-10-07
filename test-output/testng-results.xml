@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-07T10:41:34 IST" name="Default suite" finished-at="2024-10-07T10:41:38 IST" duration-ms="3562">
+    <groups>
+    </groups>
+    <test started-at="2024-10-07T10:41:34 IST" name="Default test" finished-at="2024-10-07T10:41:38 IST" duration-ms="3562">
+      <class name="com.testCases.AddEmployeeDataPage">
+        <test-method is-config="true" signature="name()[pri:0, instance:com.testCases.AddEmployeeDataPage@43f02ef2]" started-at="2024-10-07T10:41:34 IST" name="name" finished-at="2024-10-07T10:41:34 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- name -->
+        <test-method is-config="true" signature="setExtent()[pri:0, instance:com.testCases.AddEmployeeDataPage@43f02ef2]" started-at="2024-10-07T10:41:34 IST" name="setExtent" finished-at="2024-10-07T10:41:35 IST" duration-ms="295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method is-config="true" signature="browserLunch(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.testCases.AddEmployeeDataPage@43f02ef2]" started-at="2024-10-07T10:41:35 IST" name="browserLunch" finished-at="2024-10-07T10:41:37 IST" duration-ms="2568" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=AddEmployeeDataPage.logInApplication()[pri:0, instance:com.testCases.AddEmployeeDataPage@43f02ef2] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.testCases.AddEmployeeDataPage.logInApplication()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLunch -->
+        <test-method signature="logInApplication()[pri:0, instance:com.testCases.AddEmployeeDataPage@43f02ef2]" started-at="2024-10-07T10:41:37 IST" name="logInApplication" description="Account login" finished-at="2024-10-07T10:41:38 IST" duration-ms="330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logInApplication -->
+        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:com.testCases.AddEmployeeDataPage@43f02ef2]" started-at="2024-10-07T10:41:38 IST" name="browserClose" finished-at="2024-10-07T10:41:38 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=logInApplication status=SUCCESS method=AddEmployeeDataPage.logInApplication()[pri:0, instance:com.testCases.AddEmployeeDataPage@43f02ef2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.testCases.AddEmployeeDataPage@43f02ef2]" started-at="2024-10-07T10:41:38 IST" name="endReport" finished-at="2024-10-07T10:41:38 IST" duration-ms="346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.testCases.AddEmployeeDataPage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
