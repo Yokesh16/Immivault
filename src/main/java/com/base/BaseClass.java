@@ -8,7 +8,9 @@ import java.lang.reflect.Method;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -95,12 +97,15 @@ public class BaseClass {
 				TimeUnit.SECONDS);
 		getDriver().get(properties.getProperty("url"));
 
-//		  getDriver().findElement(By.id("exampleInputEmail1")).sendKeys(properties.
-//		  getProperty("username"));
-//		  getDriver().findElement(By.id("exampleInputPassword1")).sendKeys(properties.
-//		  getProperty("password"));
-//		  getDriver().findElement(By.id("button_submit")).click();
-
+		
+		/*
+		 * getDriver().findElement(By.id("exampleInputEmail1")).sendKeys(properties.
+		 * getProperty("username")); //
+		 * getDriver().findElement(By.id("exampleInputPassword1")).sendKeys(properties.
+		 * getProperty("password")); //
+		 * getDriver().findElement(By.id("button_submit")).click();
+		 */
+		 
 		test = extentReports.createTest(result.getMethod().getDescription().toString(),
 				result.getMethod().getMethodName());
 	}
@@ -119,6 +124,13 @@ public class BaseClass {
 		}
 
 		if (getDriver() != null) {
+			
+			
+			  WebElement logoutButton = driver.findElement(By.id("logoutButton"));
+			  logoutButton.click(); WebElement yes =
+			  driver.findElement(By.xpath("//button[contains(text(),'Yes')]"));
+			  yes.click();
+			 
 			// driver.quit();
 		}
 	}

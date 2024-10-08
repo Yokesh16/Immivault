@@ -15,6 +15,6 @@ public class AddEmployeeDataPage extends BaseClass {
 	}
 	
 	
-	@FindBy(xpath = "")
-	private WebElement gfdg;
+	@FindBy(xpath = "//button[normalize-space(text())='Add Employee']")
+	private WebElement addEmployeeButtom;
 }
