@@ -3,15 +3,16 @@ package com.utility;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
+
 import com.base.BaseClass;
 
 public class UtilsActions extends BaseClass implements UtilsInterface {
 
 	@Override
-	public  void sendKeys(String value, WebElement element) {
-		
+	public void sendKeys(String value, WebElement element) {
+
 		element.sendKeys(value);
-		
+
 	}
 
 	@Override
@@ -19,19 +20,26 @@ public class UtilsActions extends BaseClass implements UtilsInterface {
 		try {
 			ele.click();
 		} catch (Exception e) {
-			
-			JavascriptExecutor executor = (JavascriptExecutor)driver;
-			
+
+			JavascriptExecutor executor = (JavascriptExecutor) driver;
+
 			executor.executeScript("[arguments[0].click()]", ele);
 		}
-		
-		
+
 	}
 
-	
-		
-		
-		
+	@Override
+	public void getText(WebElement ele) {
+
+		ele.getText();
+
 	}
 
+	@Override
+	public void getAttribute(WebElement ele, String value) {
 
+		ele.getAttribute(value);
+
+	}
+
+}
