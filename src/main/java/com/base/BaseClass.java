@@ -126,10 +126,12 @@ public class BaseClass {
 		if (getDriver() != null) {
 			
 			
-			  WebElement logoutButton = driver.findElement(By.id("logoutButton"));
-			  logoutButton.click(); WebElement yes =
-			  driver.findElement(By.xpath("//button[contains(text(),'Yes')]"));
-			  yes.click();
+			/*
+			 * WebElement logoutButton = driver.findElement(By.id("logoutButton"));
+			 * logoutButton.click(); WebElement yes =
+			 * driver.findElement(By.xpath("//button[contains(text(),'Yes')]"));
+			 * yes.click();
+			 */
 			 
 			// driver.quit();
 		}

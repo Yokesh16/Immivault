@@ -3,16 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testCases.AddEmployeeDataPage">
+      <class name="com.testCases.AddEmployeeDataRunner">
         <methods>
           <include name="endReport"/>
-          <include name="logInApplication"/>
           <include name="name"/>
+          <include name="logInApplication"/>
           <include name="setExtent"/>
           <include name="browserClose"/>
           <include name="browserLunch"/>
         </methods>
-      </class> <!-- com.testCases.AddEmployeeDataPage -->
+      </class> <!-- com.testCases.AddEmployeeDataRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
